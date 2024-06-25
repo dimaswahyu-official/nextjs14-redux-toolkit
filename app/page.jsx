@@ -1,3 +1,4 @@
+import CartLength from "@/components/CartLength";
 import ProductList from "@/components/ProductList";
 import { getData } from "@/lib/getData";
 import Link from "next/link";
@@ -14,7 +15,7 @@ const HomePage = async () => {
             className="bg-lime-600 hover:bg-lime-800 duration-300 transition-all text-slate-50 rounded-md px-4 py-2"
             href="/cart"
           >
-            View Cart (0)
+            View Cart (<CartLength/>)
           </Link>
         </div>
         <div className="bg-white dark:bg-slate-700 p-4">
